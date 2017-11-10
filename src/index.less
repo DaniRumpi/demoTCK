@@ -1,7 +1,12 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('/app/fonts/Lato-Regular.ttf') format('truetype');
+}
+
 html, body, #root {
   margin: 0;
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'ProximaNova';
 }
 
 body, h1, h2, h3 {
@@ -31,7 +36,7 @@ a {
 .header {
   display: flex;
   align-items: center;
-  background-color: #1f1f1f;
+  // background-color: #1f1f1f;
 }
 .header-title {
   flex: 1;
@@ -43,6 +48,40 @@ a {
   text-align: right;
   margin: 1rem;
   color: white;
+}
+
+.imgHeader {
+  width: 100%;
+  height: auto;
+  margin-top: 200px;
+}
+
+.capaSup {
+  flex: 2;
+  margin-top: -100px;
+  background-color: rgba(38, 131, 187, 0.99);
+  position: absolute;
+  width: 100%;
+  height: 600px;
+}
+.headerMenuText {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 800;
+  margin-left: 120px;
+  margin-top: 70px;
+}
+.iconContact{
+  width: 25px;
+  height: auto;
+}
+.desp {
+  width: 20px;
+  height: auto;
+}
+.iconTracking {
+  width: 18px;
+  height: auto;
 }
 
 .title {
