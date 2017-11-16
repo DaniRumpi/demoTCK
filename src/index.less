@@ -41,32 +41,42 @@ a {
   font-size: 1.5rem;
   margin: 1rem;
 }
-.header-date {
-  flex: 1;
-  text-align: right;
-  margin: 1rem;
-  color: white;
-}
 
 .imgHeader {
+  z-index: 1;
+  position: relative;
   width: 100%;
   height: 500px;
   margin-top: 220px;
 }
 
+.menuButton {
+  z-index: 2;
+  position: absolute;
+  padding-left: 120px;
+  margin-top: 100px;
+}
+.rectMenuBack{
+  background-color: grey;
+  margin-top: 20px;
+  margin-left: 5px;
+  height: 80px;
+  width: 200px;
+}
+
 .capaSup {
-  flex: 2;
+  z-index: 3;
+  position: absolute;
   margin-top: -110px;
   background-color: rgba(38, 131, 187, 0.95);
-  position: absolute;
-  width: 100%;
+  padding-left: 120px;
   height: 500px;
+  width: 100%;
 }
 .headerMenuText {
   color: white;
   font-size: 1em;
   font-weight: 800;
-  margin-left: 120px;
   margin-top: 70px;
 }
 .iconContact{
@@ -81,6 +91,131 @@ a {
   width: 18px;
   height: auto;
 }
+.btnReg {
+  color: #fff;
+  height: 50px;
+  width: 140px;
+  margin-top: 10px;
+  margin-left: 20px;
+  background-color: #fff;
+  border-radius: 2px;
+  color: #fd935c;
+  font-weight: 100;
+  border: 3px solid #fd935c;
+}
+
+.capaBuscador {
+  z-index: 4;
+  margin-top: 130px;
+}
+.buscador {
+  background-color: #FAFAFA;
+  margin-top: -35px;
+  height: 180px;
+  width: 78%;
+  border: 5px solid #3D7296;
+  margin-right: 0px;
+}
+.arrow-before {
+  width:0px;
+  height:0px;
+  border-left: 17px solid transparent;  /* izquierda flecha */
+  border-right: 17px solid transparent; /* derecha flecha */
+  border-bottom: 17px solid #3D7296; /* base flecha y color*/
+  top: -21px;
+  left: 100px;
+  position: relative;
+}
+.arrow-after {
+  width:0px;
+  height:0px;
+  border-left: 15px solid transparent;  /* izquierda flecha */
+  border-right: 15px solid transparent; /* derecha flecha */
+  border-bottom: 15px solid white; /* base flecha y color*/
+  top: -30px;
+  left: 102px;
+  position: relative;
+}
+.contentBuscador {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.inputText {
+  width: 250px;
+  height: 70px;
+  font-size: 1.2em;
+  font-weight: 100;
+  padding-left: 20px;
+}
+.inputTextDate {
+  width: 160px;
+  height: 70px;
+  margin-left: 15px;
+  font-size: 1.2em;
+  font-weight: 100;
+  padding-left: 20px;
+  background: url("/app/assets/ICO_CALENDAR.svg") no-repeat right 10px center;
+}
+.divDate {
+  width: 200px;
+  margin-left: 25px;
+}
+.divBtn{
+  width: 55px;
+  margin-top: 24px;
+  margin-left: 25px;
+}
+.titleBusc{
+  color: #000;
+  font-weight: 100;
+}
+.btnFlechas {
+  background-color: #000;
+  height: 70px;
+  width: 50px;
+  border-radius: 6px;
+}
+.btnQuote {
+  color: #fff;
+  margin-top: 25px;
+  height: 70px;
+  width: 200px;
+  background-color: #fd935c;
+  border-radius: 6px;
+}
+
+.headerMenuButton {
+  position: absolute;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  font-weight: 800;
+  margin-top: 410px;
+}
+.rectMenu{
+  background-color: rgba(131, 192, 219, 0.5);
+  margin-top: 20px;
+  margin-left: 5px;
+  height: 70px;
+  width: 200px;
+}
+.rectMenu:hover {
+  background-color: rgba(30, 84, 109, 0.5);
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-top: 10px;
+  height: 80px;
+  width: 200px;
+  color: #4bb9fc;
+  .txtButton{
+    font-weight: bold;
+    margin-top: 30px;
+  }
+}
+.txtButton {
+  font-weight: bold;
+  margin-top: 20px;
+}
 
 .selectedMenu{
   color: white;
@@ -88,23 +223,20 @@ a {
 }
 .selectedMenu:hover{
   font-weight: bold;
-  color: orange;
+  color: #fd935c;
   margin: 5px;
 }
 
-.headerMenuButton {
-  color: white;
-  font-size: 1em;
-  font-weight: 800;
-  margin-left: 120px;
-  margin-top: 50px;
+.tick {
+  width: auto;
 }
-.rectMenu{
-  background-color: grey;
-  margin-left: 5px;
-  height: 80px;
-  width: 200px;
-}
+
+
+
+// @media only screen and (max-width:800px){
+//   /* For tablets */
+//
+// }
 
 .title {
   display: flex;
