@@ -1,5 +1,8 @@
 <div class="divSiglas">
-  <div class="txtSigla">
+  <div class="txtSigla" ng-mouseover="flecha = true" ng-mouseleave="flecha = false">
     {{ $ctrl.sigla.text }}
+  </div>
+  <div ng-mouseover="flecha=true" ng-mouseleave="flecha=false">
+    <div class="flecha-down" ng-show="flecha"></div>
   </div>
 </div>

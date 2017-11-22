@@ -8,7 +8,6 @@ angular
   /** @ngInject */
 function TitleController($http) {
   var vm = this;
-  console.log(vm);
 
   $http
     .get('app/siglas.json')
