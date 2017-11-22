@@ -112,9 +112,8 @@ a {
   background-color: #FAFAFA;
   margin-top: -35px;
   height: 180px;
-  width: 78%;
+  width: 85%;
   border: 5px solid #3D7296;
-  margin-right: 0px;
 }
 .arrow-before {
   width:0px;
@@ -136,9 +135,19 @@ a {
   left: 102px;
   position: relative;
 }
+.divArrow {
+  width: 30px;
+}
 .contentBuscador {
+  display: flex;
+  flex-direction: row;
   margin-top: 30px;
   margin-left: 50px;
+}
+.block label {
+  display: block;
+  text-align: left;
+  align-items: center;
 }
 .inputText {
   width: 250px;
@@ -158,12 +167,12 @@ a {
 }
 .divDate {
   width: 200px;
-  margin-left: 25px;
+  margin-left: 10px;
 }
 .divBtn{
   width: 55px;
   margin-top: 24px;
-  margin-left: 25px;
+  margin-left: 5px;
 }
 .titleBusc{
   color: #000;
@@ -186,7 +195,7 @@ a {
 
 .headerMenuButton {
   position: absolute;
-  width: 100%;
+  width: 70%;
   color: white;
   font-size: 1em;
   font-weight: 800;
@@ -200,6 +209,19 @@ a {
   width: 200px;
 }
 .rectMenu:hover {
+  background-color: rgba(30, 84, 109, 0.5);
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-top: 10px;
+  height: 80px;
+  width: 200px;
+  color: #4bb9fc;
+  .txtButton{
+    font-weight: bold;
+    margin-top: 30px;
+  }
+}
+.rectMenuSelected {
   background-color: rgba(30, 84, 109, 0.5);
   margin-top: 20px;
   margin-left: 5px;
@@ -226,11 +248,17 @@ a {
   color: #fd935c;
   margin: 5px;
 }
+.selectedMenuSelected {
+  color: #fd935c;
+}
 
 .tick {
   width: auto;
 }
 
+.pButton{
+  text-align: center;
+}
 .buttonOptions {
   background-color: white;
   color: #4bb9fc;
@@ -281,7 +309,7 @@ a {
 }
 
 .techs-container {
-  margin: 1rem;
+  background-color: #F2F2F2;
 }
 .techs {
   display: flex;
@@ -297,12 +325,41 @@ a {
   padding: 1rem;
 }
 .tech-logo {
-  width: 5rem;
-  height: 5rem;
-  float: right;
+  width: 4rem;
+  height: 4rem;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+.tech-globo {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
   margin: 0 0 .5rem .5rem;
 }
-.tech-h3 {
-  font-size: 1.5rem;
+.imagenOptions {
+  width: 9rem;
+  height: 9rem;
+  text-align: center;
+  align-items: center;
+  margin: 0 80px;
+}
+.techTitle {
+  font-size: 3rem;
+  font-weight: normal;
+  justify-content: center;
+  text-align: center;
   margin: 0 0 2rem 0;
+}
+.textInfo {
+  text-align: center;
+  line-height: 30px;
+  font-size: 2rem;
+  font-weight: 100;
+}
+.textLink {
+  text-align: center;
+  line-height: 55px;
+  font-size: 2rem;
+  font-weight: 100;
+  color: #4bb9fc;
 }
