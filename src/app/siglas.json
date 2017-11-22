@@ -1,0 +1,22 @@
+[
+  {
+    "key": "FOB",
+    "text": "FOB"
+  },
+  {
+    "key": "CFR",
+    "text": "CFR"
+  },
+  {
+    "key": "CIF",
+    "text": "CIF"
+  },
+  {
+    "key": "DAT",
+    "text": "DAT"
+  },
+  {
+    "key": "DAP",
+    "text": "DAP"
+  }
+]
