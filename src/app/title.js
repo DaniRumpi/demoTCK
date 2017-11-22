@@ -14,4 +14,10 @@ function TitleController($http) {
     .then(function (response) {
       vm.siglas = response.data;
     });
+
+  $http
+    .get('app/recorridos.json')
+    .then(function (response) {
+      vm.recorridos = response.data;
+    });
 }
