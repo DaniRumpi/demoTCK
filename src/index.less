@@ -1,0 +1,427 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('/app/fonts/Lato-Regular.ttf') format('truetype');
+}
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+}
+
+body, h1, h2, h3 {
+  font-weight: 300
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: #5aadbb;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+.header-title {
+  flex: 1;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.imgHeader {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-top: 220px;
+}
+
+.menuButton {
+  z-index: 2;
+  position: absolute;
+  padding-left: 120px;
+  margin-top: 100px;
+}
+.rectMenuBack{
+  background-color: grey;
+  margin-top: 20px;
+  margin-left: 5px;
+  height: 80px;
+  width: 200px;
+}
+
+.capaSup {
+  z-index: 3;
+  position: absolute;
+  margin-top: -110px;
+  background-color: rgba(38, 131, 187, 0.95);
+  padding-left: 120px;
+  height: 500px;
+  width: 100%;
+}
+.headerMenuText {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 1em;
+  font-weight: 800;
+  margin-top: 70px;
+}
+.iconContact{
+  width: 25px;
+  height: auto;
+}
+.desp {
+  width: 15px;
+  height: auto;
+}
+.iconTracking {
+  width: 18px;
+  height: auto;
+}
+.btnReg {
+  color: #fff;
+  height: 50px;
+  width: 140px;
+  margin-top: 10px;
+  margin-left: 20px;
+  background-color: #fff;
+  border-radius: 2px;
+  color: #fd935c;
+  font-weight: 100;
+  border: 3px solid #fd935c;
+}
+
+.capaBuscador {
+  z-index: 4;
+  margin-top: 130px;
+}
+.buscador {
+  background-color: #FAFAFA;
+  margin-top: -35px;
+  height: 180px;
+  width: 85%;
+  border: 5px solid #3D7296;
+}
+.arrow-before {
+  width:0px;
+  height:0px;
+  border-left: 17px solid transparent;  /* izquierda flecha */
+  border-right: 17px solid transparent; /* derecha flecha */
+  border-bottom: 17px solid #3D7296; /* base flecha y color*/
+  top: -21px;
+  left: 100px;
+  position: relative;
+}
+.arrow-after {
+  width:0px;
+  height:0px;
+  border-left: 15px solid transparent;  /* izquierda flecha */
+  border-right: 15px solid transparent; /* derecha flecha */
+  border-bottom: 15px solid white; /* base flecha y color*/
+  top: -30px;
+  left: 102px;
+  position: relative;
+}
+.divArrow {
+  width: 30px;
+}
+.contentBuscador {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.block label {
+  display: block;
+  text-align: left;
+  align-items: center;
+}
+.inputText {
+  width: 250px;
+  height: 70px;
+  font-size: 1.2em;
+  font-weight: 100;
+  padding-left: 20px;
+}
+.inputTextDate {
+  width: 160px;
+  height: 70px;
+  margin-left: 15px;
+  font-size: 1.2em;
+  font-weight: 100;
+  padding-left: 20px;
+  background: url("/app/assets/ICO_CALENDAR.svg") no-repeat right 10px center;
+}
+.divDate {
+  width: 200px;
+  margin-left: 10px;
+}
+.divBtn{
+  width: 55px;
+  margin-top: 24px;
+  margin-left: 5px;
+}
+.titleBusc{
+  color: #000;
+  font-weight: 100;
+}
+.btnFlechas {
+  background-color: #000;
+  height: 70px;
+  width: 50px;
+  border-radius: 6px;
+}
+.btnQuote {
+  color: #fff;
+  margin-top: 25px;
+  height: 70px;
+  width: 200px;
+  background-color: #fd935c;
+  border-radius: 6px;
+}
+
+.headerMenuButton {
+  position: absolute;
+  width: 70%;
+  color: white;
+  font-size: 1em;
+  font-weight: 800;
+  margin-top: 410px;
+}
+.rectMenu{
+  background-color: rgba(131, 192, 219, 0.5);
+  margin-top: 20px;
+  margin-left: 5px;
+  height: 70px;
+  width: 200px;
+}
+.rectMenu:hover {
+  background-color: rgba(30, 84, 109, 0.5);
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-top: 10px;
+  height: 80px;
+  width: 200px;
+  color: #4bb9fc;
+  .txtButton{
+    font-weight: bold;
+    margin-top: 30px;
+  }
+}
+.rectMenuSelected {
+  background-color: rgba(30, 84, 109, 0.5);
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-top: 10px;
+  height: 80px;
+  width: 200px;
+  color: #4bb9fc;
+  .txtButton{
+    font-weight: bold;
+    margin-top: 30px;
+  }
+}
+.txtButton {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.selectedMenu{
+  color: white;
+  margin: 5px;
+}
+.selectedMenu:hover{
+  font-weight: bold;
+  color: #fd935c;
+  margin: 5px;
+}
+.selectedMenuSelected {
+  color: #fd935c;
+}
+
+.tick {
+  width: auto;
+}
+
+.pButton{
+  text-align: center;
+}
+.buttonOptions {
+  background-color: white;
+  color: #4bb9fc;
+  font-weight: bold;
+  border: 1px solid #4bb9fc;
+  border-radius: 5px;
+  height: 50px;
+  width: 140px;
+}
+
+
+@media screen and (max-width:800px){
+   /* Resolution for tablets */
+  .header {
+    display:none;
+  }
+  .buscador {
+    background-color: #FAFAFA;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .arrow-after {
+    display: none;
+  }
+  .arrow-before {
+    display: none;
+  }
+
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 120px;
+  background-color: white;
+  color: black;
+}
+.title-h1 {
+  font-weight: 300;
+  font-size: 4rem;
+  margin: 1rem;
+  color: #1C1C1C;
+}
+.title-logo {
+  height: 12rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.title-h2 {
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin: 1.5rem;
+}
+.textOcean {
+  font-size: 2.1rem;
+  line-height: 50px;
+  font-weight: bolder;
+  width: 60%;
+  color: #848484;
+  text-align: center;
+}
+.divSiglas{
+  background-color: #D8D8D8;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 40px 0 6px 6px;
+}
+.divSiglas:hover{
+  background-color: #4bb9fc;
+  .txtSigla {
+    color: white;
+  }
+}
+.txtSigla {
+  color: #848484;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.footer {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+}
+
+.techs-container {
+  background-color: #F2F2F2;
+}
+.techs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech {
+  height: 50rem;
+  width: 30rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.tech-logo {
+  width: 4rem;
+  height: 4rem;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+.tech-globo {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  margin: 0 0 .5rem .5rem;
+}
+.imagenOptions {
+  width: 9rem;
+  height: 9rem;
+  text-align: center;
+  align-items: center;
+  margin: 0 80px;
+}
+.techTitle {
+  font-size: 3rem;
+  font-weight: normal;
+  justify-content: center;
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+.textInfo {
+  text-align: center;
+  line-height: 30px;
+  font-size: 2rem;
+  font-weight: 100;
+}
+.textLink {
+  text-align: center;
+  line-height: 55px;
+  font-size: 2rem;
+  font-weight: 100;
+  color: #4bb9fc;
+}
+
+.globosPosition {
+  display: flex;
+  flex-direction: row;
+}
+.flecha-down {
+  width:0px;
+  height:0px;
+  margin-top: 10px;
+  margin-left: 30px;
+  border-left:10px solid transparent; /* izquierda flecha */
+  border-right:10px solid transparent; /* derecha flecha */
+  border-top:10px solid #4bb9fc; /* base flecha y color*/
+  font-size:0px;
+  line-height:0px;
+}
